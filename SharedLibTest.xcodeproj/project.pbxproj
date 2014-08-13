@@ -22,6 +22,7 @@
 		C95B67E919999521006FDD17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95B67C819999521006FDD17 /* UIKit.framework */; };
 		C95B67F119999521006FDD17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C95B67EF19999521006FDD17 /* InfoPlist.strings */; };
 		C95B67F319999521006FDD17 /* SharedLibTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C95B67F219999521006FDD17 /* SharedLibTestTests.m */; };
+		C95B67FF1999975D006FDD17 /* NetworkTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C95B67FD1999975D006FDD17 /* NetworkTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		C95B67EE19999521006FDD17 /* SharedLibTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SharedLibTestTests-Info.plist"; sourceTree = "<group>"; };
 		C95B67F019999521006FDD17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C95B67F219999521006FDD17 /* SharedLibTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedLibTestTests.m; sourceTree = "<group>"; };
+		C95B67FD1999975D006FDD17 /* NetworkTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkTest.cpp; sourceTree = "<group>"; };
+		C95B67FE1999975D006FDD17 /* NetworkTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,7 @@
 		C95B67CA19999521006FDD17 /* SharedLibTest */ = {
 			isa = PBXGroup;
 			children = (
+				C95B67FC199996D7006FDD17 /* SharedLib */,
 				C95B67D319999521006FDD17 /* SharedLibTestAppDelegate.h */,
 				C95B67D419999521006FDD17 /* SharedLibTestAppDelegate.m */,
 				C95B67D619999521006FDD17 /* Main_iPhone.storyboard */,
@@ -153,6 +157,15 @@
 				C95B67EF19999521006FDD17 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C95B67FC199996D7006FDD17 /* SharedLib */ = {
+			isa = PBXGroup;
+			children = (
+				C95B67FD1999975D006FDD17 /* NetworkTest.cpp */,
+				C95B67FE1999975D006FDD17 /* NetworkTest.h */,
+			);
+			name = SharedLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +269,7 @@
 			files = (
 				C95B67DE19999521006FDD17 /* SharedLibTestViewController.m in Sources */,
 				C95B67D119999521006FDD17 /* main.m in Sources */,
+				C95B67FF1999975D006FDD17 /* NetworkTest.cpp in Sources */,
 				C95B67D519999521006FDD17 /* SharedLibTestAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

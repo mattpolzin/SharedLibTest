@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C93E7964199C177C00FAF5AF /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C93E7963199C177C00FAF5AF /* libcurl.a */; };
+		C93E7966199C2B7D00FAF5AF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93E7965199C2B7D00FAF5AF /* Security.framework */; };
+		C93E7968199C2B8C00FAF5AF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C93E7967199C2B8C00FAF5AF /* libz.dylib */; };
+		C93E796A199C2B9900FAF5AF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93E7969199C2B9900FAF5AF /* CFNetwork.framework */; };
 		C95B67C519999521006FDD17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95B67C419999521006FDD17 /* Foundation.framework */; };
 		C95B67C719999521006FDD17 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95B67C619999521006FDD17 /* CoreGraphics.framework */; };
 		C95B67C919999521006FDD17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95B67C819999521006FDD17 /* UIKit.framework */; };
 		C95B67CF19999521006FDD17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C95B67CD19999521006FDD17 /* InfoPlist.strings */; };
 		C95B67D119999521006FDD17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C95B67D019999521006FDD17 /* main.m */; };
-		C95B67D519999521006FDD17 /* SharedLibTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C95B67D419999521006FDD17 /* SharedLibTestAppDelegate.m */; };
+		C95B67D519999521006FDD17 /* SharedLibTestAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C95B67D419999521006FDD17 /* SharedLibTestAppDelegate.mm */; };
 		C95B67D819999521006FDD17 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95B67D619999521006FDD17 /* Main_iPhone.storyboard */; };
 		C95B67DB19999521006FDD17 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95B67D919999521006FDD17 /* Main_iPad.storyboard */; };
 		C95B67DE19999521006FDD17 /* SharedLibTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C95B67DD19999521006FDD17 /* SharedLibTestViewController.m */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C93E7963199C177C00FAF5AF /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = "../curl/curl-7.37.1/lib_builds/libcurl.a"; sourceTree = "<group>"; };
+		C93E7965199C2B7D00FAF5AF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C93E7967199C2B8C00FAF5AF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C93E7969199C2B9900FAF5AF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		C95B67C119999521006FDD17 /* SharedLibTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharedLibTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95B67C419999521006FDD17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C95B67C619999521006FDD17 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,7 +53,7 @@
 		C95B67D019999521006FDD17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C95B67D219999521006FDD17 /* SharedLibTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SharedLibTest-Prefix.pch"; sourceTree = "<group>"; };
 		C95B67D319999521006FDD17 /* SharedLibTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedLibTestAppDelegate.h; sourceTree = "<group>"; };
-		C95B67D419999521006FDD17 /* SharedLibTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedLibTestAppDelegate.m; sourceTree = "<group>"; };
+		C95B67D419999521006FDD17 /* SharedLibTestAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SharedLibTestAppDelegate.mm; sourceTree = "<group>"; };
 		C95B67D719999521006FDD17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		C95B67DA19999521006FDD17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		C95B67DC19999521006FDD17 /* SharedLibTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedLibTestViewController.h; sourceTree = "<group>"; };
@@ -58,6 +66,7 @@
 		C95B67F219999521006FDD17 /* SharedLibTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedLibTestTests.m; sourceTree = "<group>"; };
 		C95B67FD1999975D006FDD17 /* NetworkTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkTest.cpp; sourceTree = "<group>"; };
 		C95B67FE1999975D006FDD17 /* NetworkTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTest.h; sourceTree = "<group>"; };
+		C99D2994199D324600FBB447 /* NetworkTestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkTestDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93E796A199C2B9900FAF5AF /* CFNetwork.framework in Frameworks */,
+				C93E7968199C2B8C00FAF5AF /* libz.dylib in Frameworks */,
+				C93E7966199C2B7D00FAF5AF /* Security.framework in Frameworks */,
+				C93E7964199C177C00FAF5AF /* libcurl.a in Frameworks */,
 				C95B67C719999521006FDD17 /* CoreGraphics.framework in Frameworks */,
 				C95B67C919999521006FDD17 /* UIKit.framework in Frameworks */,
 				C95B67C519999521006FDD17 /* Foundation.framework in Frameworks */,
@@ -106,6 +119,10 @@
 		C95B67C319999521006FDD17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C93E7969199C2B9900FAF5AF /* CFNetwork.framework */,
+				C93E7967199C2B8C00FAF5AF /* libz.dylib */,
+				C93E7965199C2B7D00FAF5AF /* Security.framework */,
+				C93E7963199C177C00FAF5AF /* libcurl.a */,
 				C95B67C419999521006FDD17 /* Foundation.framework */,
 				C95B67C619999521006FDD17 /* CoreGraphics.framework */,
 				C95B67C819999521006FDD17 /* UIKit.framework */,
@@ -119,7 +136,7 @@
 			children = (
 				C95B67FC199996D7006FDD17 /* SharedLib */,
 				C95B67D319999521006FDD17 /* SharedLibTestAppDelegate.h */,
-				C95B67D419999521006FDD17 /* SharedLibTestAppDelegate.m */,
+				C95B67D419999521006FDD17 /* SharedLibTestAppDelegate.mm */,
 				C95B67D619999521006FDD17 /* Main_iPhone.storyboard */,
 				C95B67D919999521006FDD17 /* Main_iPad.storyboard */,
 				C95B67DC19999521006FDD17 /* SharedLibTestViewController.h */,
@@ -162,6 +179,7 @@
 		C95B67FC199996D7006FDD17 /* SharedLib */ = {
 			isa = PBXGroup;
 			children = (
+				C99D2994199D324600FBB447 /* NetworkTestDelegate.h */,
 				C95B67FD1999975D006FDD17 /* NetworkTest.cpp */,
 				C95B67FE1999975D006FDD17 /* NetworkTest.h */,
 			);
@@ -270,7 +288,7 @@
 				C95B67DE19999521006FDD17 /* SharedLibTestViewController.m in Sources */,
 				C95B67D119999521006FDD17 /* main.m in Sources */,
 				C95B67FF1999975D006FDD17 /* NetworkTest.cpp in Sources */,
-				C95B67D519999521006FDD17 /* SharedLibTestAppDelegate.m in Sources */,
+				C95B67D519999521006FDD17 /* SharedLibTestAppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,12 +421,18 @@
 		C95B67F719999521006FDD17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SharedLibTest/SharedLibTest-Prefix.pch";
 				INFOPLIST_FILE = "SharedLibTest/SharedLibTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/matt/staging/curl/curl-7.37.1/lib_builds",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/matt/staging/curl/curl-7.37.1/include";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -416,12 +440,18 @@
 		C95B67F819999521006FDD17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SharedLibTest/SharedLibTest-Prefix.pch";
 				INFOPLIST_FILE = "SharedLibTest/SharedLibTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/matt/staging/curl/curl-7.37.1/lib_builds",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/matt/staging/curl/curl-7.37.1/include";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -485,6 +515,7 @@
 				C95B67F819999521006FDD17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C95B67F919999521006FDD17 /* Build configuration list for PBXNativeTarget "SharedLibTestTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +524,7 @@
 				C95B67FB19999521006FDD17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,13 +10,19 @@
 #define __SharedLibTest__NetworkTest__
 
 #include <iostream>
+#include <curl/curl.h>
+#include "NetworkTestDelegate.h"
+
 
 class NetworkTest {
-	
+private:
+	NetworkTestDelegate *delegate;
+	CURL *curl;
 	
 public:
-	void NetworkTest();
-	
+	NetworkTest(NetworkTestDelegate *delegate);
+	~NetworkTest();
+	void poll();
 };
 
 #endif /* defined(__SharedLibTest__NetworkTest__) */

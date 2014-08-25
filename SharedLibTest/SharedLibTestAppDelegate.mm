@@ -7,15 +7,46 @@
 //
 
 #import "SharedLibTestAppDelegate.h"
+#include "NetworkTest.h"
+#include "NetworkTestDelegate.h"
+
+class NetDel : public NetworkTestDelegate {
+private:
+	SharedLibTestAppDelegate *appDel;
+	
+public:
+	NetDel(SharedLibTestAppDelegate *appDel)
+	{
+		this->appDel = appDel;
+	}
+	
+	void dataAvailable(char *ptr, size_t size, size_t num)
+	{
+		NSData* data = [NSData dataWithBytes:ptr length:num*size];
+		[this->appDel dataReceived:data];
+	}
+};
+
 
 @implementation SharedLibTestAppDelegate
+{
+	NetDel *netDel;
+	NetworkTest *netTest;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+	
+	NSLog(@"here");
+	netDel = new NetDel(self);
+	netTest = new NetworkTest(netDel);
+	
+	netTest->poll();
+	
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
 	// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -41,6 +72,15 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+	delete netTest;
+	delete netDel;
+}
+
+- (void)dataReceived:(NSData*)data
+{
+	
+	NSString *tmp = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+	NSLog(@"here! %@", tmp);
 }
 
 @end
